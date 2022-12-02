@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic php project</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="bg" src="bg.jpg" alt="">
+    <div class="container">
+        <h2>US trip form</h2>
+        <p>Enter your details in the form to ensure your trip</p>
+        <div id="form">
+            <form action="index.php" method="post">
+                <label for="name">Name : </label><br>
+                <input type="text" name="name" id="name" placeholder="Name" required><br>
+                <label for="email">Email : </label><br>
+                <input type="email" name="email" id="email" placeholder="Email" required><br>
+                <label for="phone">Phone : </label><br>
+                <input type="tel" name="phone" id="phone" placeholder="Phone" required><br>
+                <label for="age">Age : </label><br>
+                <input type="number" name="age" id="age" placeholder="Age" required><br>
+                <label for="description">Descrition : </label><br>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Descrition" required></textarea><br>
+                <button class="btn" type="submit">Submit</button>
+                <button class="btn" type="reset">Reset</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
